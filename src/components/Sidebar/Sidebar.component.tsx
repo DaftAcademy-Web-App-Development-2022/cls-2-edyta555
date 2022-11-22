@@ -1,5 +1,5 @@
 import React from "react";
-import { User } from "~/components";
+import { Form, User } from "~/components";
 
 import userData from "~/data/userData.json";
 
@@ -20,7 +20,7 @@ const Sidebar = () => {
           logout={handleLogout}
         />
       </div>
-      <div className={styles.center}>center</div>
+      <div className={styles.center}><Form /></div>
     </div>
   );
 };
