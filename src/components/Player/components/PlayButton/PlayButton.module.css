@@ -1,0 +1,7 @@
+.playButton {
+  @apply h-14 w-14 rounded-full bg-ui5 flex items-center justify-center hover:bg-ui4;
+}
+
+.playIcon {
+  @apply h-6 w-6 text-text;
+}
