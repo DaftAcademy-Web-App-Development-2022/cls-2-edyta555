@@ -2,7 +2,11 @@ import React from "react";
 
 import styles from "./ProgressBar.module.css";
 
-const ProgressBar = ({ recoveryProgress }) => {
+interface Props {
+  recoveryProgress: number;
+}
+
+const ProgressBar = ({ recoveryProgress }: Props) => {
   console.log("recoveryProgress", recoveryProgress);
   return (
     <div className={styles.containerWithProgressBar}>
