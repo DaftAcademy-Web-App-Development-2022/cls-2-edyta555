@@ -123,7 +123,7 @@ const Form = () => {
           <div className="mt-12 mb-4">
             <button className={styles.button} type="submit">
               Dodaj playlistę
-              {loading && <span className={styles.loading}>Wysyłam...</span>}
+              {loading ? <span className={styles.loading}>Wysyłam...</span> : null}
             </button>
           </div>
         </form>
