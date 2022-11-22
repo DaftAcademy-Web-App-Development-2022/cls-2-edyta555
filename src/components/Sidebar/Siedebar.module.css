@@ -1,0 +1,11 @@
+.root {
+  @apply flex flex-col min-h-[20vh] bg-[url('/sidebar.svg')] bg-no-repeat bg-cover bg-center lg:min-h-full w-full lg:border-r lg:border-ui4;
+}
+
+.center {
+  @apply relative w-full z-10 mx-auto px-4 pb-4 pt-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto  lg:py-12 lg:px-8 xl:px-12;
+}
+
+.top {
+  @apply sticky z-20 top-0 w-full shadow-md;
+}
