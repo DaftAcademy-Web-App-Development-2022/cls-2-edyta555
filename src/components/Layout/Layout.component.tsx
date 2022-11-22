@@ -1,6 +1,6 @@
 import React from "react";
 import { Fragment } from "react";
-import { Sidebar } from "~/components";
+import { Sidebar, Player } from "~/components";
 
 import styles from "./Layout.module.css";
 
@@ -15,7 +15,9 @@ export const Layout: React.FC<Props> = ({ children }) => {
         <Sidebar />
       </header>
       <main className={styles.main}> {children} </main>
-      <footer className={styles.footer}> footer </footer>
+      <footer className={styles.footer}>
+        <Player />
+      </footer>
     </Fragment>
   );
 };
