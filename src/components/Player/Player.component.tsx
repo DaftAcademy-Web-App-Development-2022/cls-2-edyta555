@@ -8,6 +8,7 @@ import trackData from "~/data/trackData.json";
 
 import styles from "./Player.module.css";
 import ProgressBar from "./components/ProgressBar/ProgressBar.component";
+import SoundButton from "./components/SoundButton/SoundButton.component";
 
 const Player = () => {
   const { state, actions } = usePlayer();
@@ -33,6 +34,7 @@ const Player = () => {
           <PlayButton onClickHandler={goPlayer} />
         )}
         <ProgressBar recoveryProgress={state.progress}/>
+        <SoundButton />
       </div>
     </div>
   );
