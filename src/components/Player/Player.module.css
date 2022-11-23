@@ -1,3 +1,7 @@
 .root {
   @apply p-4;
 }
+
+.player {
+  @apply w-full flex justify-between gap-2 items-center;
+}
