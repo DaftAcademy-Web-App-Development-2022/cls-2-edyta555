@@ -9,6 +9,7 @@ import trackData from "~/data/trackData.json";
 import styles from "./Player.module.css";
 import ProgressBar from "./components/ProgressBar/ProgressBar.component";
 import SoundButton from "./components/SoundButton/SoundButton.component";
+import ProgressCounter from "./components/ProgressCounter/ProgressCounter.component";
 
 const Player = () => {
   const { state, actions } = usePlayer();
@@ -38,6 +39,10 @@ const Player = () => {
           <ProgressBar recoveryProgress={state.progress} />
           <p className={styles.trackArtists}>{state.meta?.artists}</p>
         </div>
+        <ProgressCounter
+          currentTime={state.currentTime}
+          duration={state.duration}
+        />
         <SoundButton />
       </div>
     </div>

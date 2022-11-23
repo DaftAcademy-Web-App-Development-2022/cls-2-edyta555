@@ -1,0 +1,3 @@
+.progressCounter {
+  @apply flex text-sm font-medium text-ui1 ml-2 mr-1;
+}

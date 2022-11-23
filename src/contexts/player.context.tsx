@@ -143,7 +143,6 @@ const PlayerProvider = (props: React.PropsWithChildren) => {
       <PlayerContext.Provider value={value} {...props} />
 
       <audio
-        controls
         ref={playerRef}
         onTimeUpdate={() => {
           if (playerRef.current) {
