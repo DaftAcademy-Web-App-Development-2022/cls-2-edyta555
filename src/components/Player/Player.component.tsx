@@ -33,7 +33,11 @@ const Player = () => {
         ) : (
           <PlayButton onClickHandler={goPlayer} />
         )}
-        <ProgressBar recoveryProgress={state.progress}/>
+        <div className={styles.progressBarWithDetails}>
+          <p className={styles.trackName}>{state.meta?.name}</p>
+          <ProgressBar recoveryProgress={state.progress} />
+          <p className={styles.trackArtists}>{state.meta?.artists}</p>
+        </div>
         <SoundButton />
       </div>
     </div>
